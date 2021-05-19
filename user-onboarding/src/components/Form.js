@@ -1,7 +1,7 @@
 import '../App.css';
 import React from 'react';
 
-export default (props) => {
+export default function Form(props) {
     const { values } = props
 
     const onChange = () => {
