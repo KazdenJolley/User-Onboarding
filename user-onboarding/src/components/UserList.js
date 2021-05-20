@@ -8,7 +8,11 @@ function User (props) {
         <div className='container'>
             <h3>Name: {user.name}</h3>
             <p>Email: {user.email}</p>
-            <p>{user.name} agreed to the terms of service.</p>
+            {
+                user.terms
+                ? <p>{user.name} agreed to the terms of service.</p>
+                : <p>{user.name} did NOT agree to the terms of service.</p>
+            }           
         </div>
     )
 }
